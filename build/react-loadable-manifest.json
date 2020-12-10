@@ -1,0 +1,74 @@
+{
+  "./DailyMotion": [
+    {
+      "id": "oKWQ",
+      "file": "static/chunks/reactPlayerDailyMotion.a9f64034b413191ab2a0.js"
+    }
+  ],
+  "./Facebook": [
+    {
+      "id": "nQ6K",
+      "file": "static/chunks/reactPlayerFacebook.4aadb43cfafd34cced73.js"
+    }
+  ],
+  "./FilePlayer": [
+    {
+      "id": "Nn5g",
+      "file": "static/chunks/reactPlayerFilePlayer.e86c5bce13aad41c17f1.js"
+    }
+  ],
+  "./Mixcloud": [
+    {
+      "id": "eywx",
+      "file": "static/chunks/reactPlayerMixcloud.5231cc4e4764ef618de9.js"
+    }
+  ],
+  "./Preview": [
+    {
+      "id": "0ZcZ",
+      "file": "static/chunks/reactPlayerPreview.c2adf139239a92f174de.js"
+    }
+  ],
+  "./SoundCloud": [
+    {
+      "id": "W6fG",
+      "file": "static/chunks/reactPlayerSoundCloud.295f394c87f6f89c837e.js"
+    }
+  ],
+  "./Streamable": [
+    {
+      "id": "v4zF",
+      "file": "static/chunks/reactPlayerStreamable.83e7635c85321351c2d1.js"
+    }
+  ],
+  "./Twitch": [
+    {
+      "id": "Vzir",
+      "file": "static/chunks/reactPlayerTwitch.8d4f674c8ab0f76e2311.js"
+    }
+  ],
+  "./Vidyard": [
+    {
+      "id": "WvJM",
+      "file": "static/chunks/reactPlayerVidyard.8bd4a1b1de9142542758.js"
+    }
+  ],
+  "./Vimeo": [
+    {
+      "id": "VkHn",
+      "file": "static/chunks/reactPlayerVimeo.fe778080a8265efe2414.js"
+    }
+  ],
+  "./Wistia": [
+    {
+      "id": "3yWd",
+      "file": "static/chunks/reactPlayerWistia.515085b9d800e9c61a37.js"
+    }
+  ],
+  "./YouTube": [
+    {
+      "id": "5RnD",
+      "file": "static/chunks/reactPlayerYouTube.4cadf8adcacf090bfb7c.js"
+    }
+  ]
+}
