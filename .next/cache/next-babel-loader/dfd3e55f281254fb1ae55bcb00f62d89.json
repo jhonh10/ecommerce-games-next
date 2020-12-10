@@ -1,0 +1,1 @@
+{"ast":null,"code":"export { default } from './ChangeEmailForm';","map":{"version":3,"sources":["C:/Users/Jessica Palacios/Desktop/Proyectos React/ecomemrce-next/client/components/Account/ChangeEmailForm/index.js"],"names":["default"],"mappings":"AAAA,SAAQA,OAAR,QAAsB,mBAAtB","sourcesContent":["export {default} from './ChangeEmailForm';\r\n"]},"metadata":{},"sourceType":"module"}

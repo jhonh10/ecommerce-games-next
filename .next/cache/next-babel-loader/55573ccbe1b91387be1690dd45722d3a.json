@@ -1,0 +1,1 @@
+{"ast":null,"code":"export { default } from './FormPayment';","map":{"version":3,"sources":["C:/Users/Jessica Palacios/Desktop/Proyectos React/ecomemrce-next/client/components/Cart/Payment/FormPayment/index.js"],"names":["default"],"mappings":"AAAA,SAAQA,OAAR,QAAsB,eAAtB","sourcesContent":["export {default} from './FormPayment';"]},"metadata":{},"sourceType":"module"}

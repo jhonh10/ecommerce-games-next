@@ -1,0 +1,1 @@
+{"ast":null,"code":"export { default } from './AdressForm';","map":{"version":3,"sources":["C:/Users/Jessica Palacios/Desktop/ecomemrce-next/client/components/Account/AdressForm/index.js"],"names":["default"],"mappings":"AAAA,SAAQA,OAAR,QAAsB,cAAtB","sourcesContent":["export {default} from './AdressForm';"]},"metadata":{},"sourceType":"module"}

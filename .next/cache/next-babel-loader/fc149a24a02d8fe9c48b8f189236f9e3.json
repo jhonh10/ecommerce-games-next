@@ -1,0 +1,1 @@
+{"ast":null,"code":"export const BASE_PATH = \"http://localhost:1337\";","map":{"version":3,"sources":["C:/Users/Jessica Palacios/Desktop/ecomemrce-next/client/utils/constants.js"],"names":["BASE_PATH"],"mappings":"AAAA,OAAO,MAAMA,SAAS,GAAG,uBAAlB","sourcesContent":["export const BASE_PATH = \"http://localhost:1337\";"]},"metadata":{},"sourceType":"module"}

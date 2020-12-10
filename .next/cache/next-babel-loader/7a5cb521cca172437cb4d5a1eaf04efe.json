@@ -1,0 +1,1 @@
+{"ast":null,"code":"export { default } from './ChangeNameForm';","map":{"version":3,"sources":["C:/Users/Jessica Palacios/Desktop/Proyectos React/ecomemrce-next/client/components/Account/ChangeNameForm/index.js"],"names":["default"],"mappings":"AAAA,SAASA,OAAT,QAAuB,kBAAvB","sourcesContent":["export { default} from './ChangeNameForm';"]},"metadata":{},"sourceType":"module"}
