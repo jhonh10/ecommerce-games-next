@@ -1,5 +1,5 @@
 import { useState, useEffect } from 'react';
-import { Grid, Button } from 'semantic-ui-react';
+import { Grid } from 'semantic-ui-react';
 import { map, size } from 'lodash';
 import Link from 'next/link';
 import classNames from 'classnames';

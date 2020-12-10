@@ -10,7 +10,7 @@ import {
     countProductsCart,
     removeProductCart,
     removeAllProductsCart
-} from '../api/cart'
+} from '../api/cartApi'
 import CartContext from '../context/ContextCart';
 import "../scss/global.scss";
 import 'semantic-ui-css/semantic.min.css';

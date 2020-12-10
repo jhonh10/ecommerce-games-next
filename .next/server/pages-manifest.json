@@ -1,8 +1,13 @@
 {
+  "/[game]": "pages/[game].js",
   "/_app": "pages/_app.js",
-  "/_error": "pages/_error.js",
-  "/_document": "pages/_document.js",
+  "/account": "pages/account.js",
+  "/cart": "pages/cart.js",
+  "/games/[platform]": "pages/games/[platform].js",
   "/": "pages/index.js",
-  "/next/dist/pages/_error": "pages/next/dist/pages/_error.js",
-  "/[game]": "pages/[game].js"
+  "/orders": "pages/orders.js",
+  "/search": "pages/search.js",
+  "/wishlist": "pages/wishlist.js",
+  "/_error": "pages/_error.js",
+  "/_document": "pages/_document.js"
 }

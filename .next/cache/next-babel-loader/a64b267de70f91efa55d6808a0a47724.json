@@ -1,0 +1,1 @@
+{"ast":null,"code":"export var BASE_PATH = \"https://game-ecommerce.herokuapp.com\";\nexport var TOKEN = \"token\";\nexport var CART = \"cart\";\nexport var STIPE_TOKEN = \"pk_test_51HF7F3HzJPdfZmk4oLAfvlpeihd8nGW7RtYehEBJsuFjX27bwCk7xo1PWf7yXdIN2F78zbrQ9JsVNkRY1lkAYOQI00wGAUlECl\";","map":null,"metadata":{},"sourceType":"module"}

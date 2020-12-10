@@ -119,7 +119,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var next_router__WEBPACK_IMPORTED_MODULE_4___default = /*#__PURE__*/__webpack_require__.n(next_router__WEBPACK_IMPORTED_MODULE_4__);
 /* harmony import */ var _context_AuthContext__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__("T00j");
 /* harmony import */ var _api_token__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__("NBZd");
-/* harmony import */ var _api_cart__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__("o/o4");
+/* harmony import */ var _api_cartApi__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__("sP/q");
 /* harmony import */ var _context_ContextCart__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__("hg/T");
 /* harmony import */ var _scss_global_scss__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__("gTka");
 /* harmony import */ var _scss_global_scss__WEBPACK_IMPORTED_MODULE_9___default = /*#__PURE__*/__webpack_require__.n(_scss_global_scss__WEBPACK_IMPORTED_MODULE_9__);
@@ -189,7 +189,7 @@ function MyApp({
     setReloadUser(false);
   }, [reloadUser]);
   Object(react__WEBPACK_IMPORTED_MODULE_1__["useEffect"])(() => {
-    setTotalProductsCart(Object(_api_cart__WEBPACK_IMPORTED_MODULE_7__[/* countProductsCart */ "b"])());
+    setTotalProductsCart(Object(_api_cartApi__WEBPACK_IMPORTED_MODULE_7__[/* countProductsCart */ "b"])());
     setReloadCart(false);
   }, [reloadCart, auth]);
 
@@ -213,7 +213,7 @@ function MyApp({
     const token = Object(_api_token__WEBPACK_IMPORTED_MODULE_6__[/* getToken */ "a"])();
 
     if (token) {
-      Object(_api_cart__WEBPACK_IMPORTED_MODULE_7__[/* addProductCart */ "a"])(product);
+      Object(_api_cartApi__WEBPACK_IMPORTED_MODULE_7__[/* addProductCart */ "a"])(product);
       setReloadCart(true);
     } else {
       react_toastify__WEBPACK_IMPORTED_MODULE_2__["toast"].warning("No has iniciado Sesion");
@@ -222,7 +222,7 @@ function MyApp({
   };
 
   const removeProduct = product => {
-    Object(_api_cart__WEBPACK_IMPORTED_MODULE_7__[/* removeProductCart */ "f"])(product);
+    Object(_api_cartApi__WEBPACK_IMPORTED_MODULE_7__[/* removeProductCart */ "f"])(product);
     setReloadCart(true);
   };
 
@@ -235,9 +235,9 @@ function MyApp({
   const cartData = Object(react__WEBPACK_IMPORTED_MODULE_1__["useMemo"])(() => ({
     productsCart: totalProductsCart,
     addProductCart: product => addProduct(product),
-    getProductsCart: _api_cart__WEBPACK_IMPORTED_MODULE_7__[/* getProductsCart */ "c"],
+    getProductsCart: _api_cartApi__WEBPACK_IMPORTED_MODULE_7__[/* getProductsCart */ "c"],
     removeProductCart: product => removeProduct(product),
-    removeAllProductsCart: _api_cart__WEBPACK_IMPORTED_MODULE_7__[/* removeAllProductsCart */ "e"]
+    removeAllProductsCart: _api_cartApi__WEBPACK_IMPORTED_MODULE_7__[/* removeAllProductsCart */ "e"]
   }), [totalProductsCart]);
   if (auth === undefined) return /*#__PURE__*/Object(react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__["jsx"])("div", {
     children: "Cargando..."
@@ -384,7 +384,14 @@ const CartContext = /*#__PURE__*/Object(react__WEBPACK_IMPORTED_MODULE_0__["crea
 
 /***/ }),
 
-/***/ "o/o4":
+/***/ "oAEb":
+/***/ (function(module, exports) {
+
+module.exports = require("react-toastify");
+
+/***/ }),
+
+/***/ "sP/q":
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -481,13 +488,6 @@ async function paymentCardApi(token, products, idUser, adress, logout) {
 function removeAllProductsCart() {
   localStorage.removeItem(_utils_constants__WEBPACK_IMPORTED_MODULE_1__[/* CART */ "b"]);
 }
-
-/***/ }),
-
-/***/ "oAEb":
-/***/ (function(module, exports) {
-
-module.exports = require("react-toastify");
 
 /***/ }),
 

@@ -1246,7 +1246,15 @@ function removePathTrailingSlash(path) {
 */
 
 
-const normalizePathTrailingSlash =  false ? undefined : removePathTrailingSlash;
+const normalizePathTrailingSlash =  true ? path => {
+  if (/\.[^/]+\/?$/.test(path)) {
+    return removePathTrailingSlash(path);
+  } else if (path.endsWith('/')) {
+    return path;
+  } else {
+    return path + '/';
+  }
+} : undefined;
 exports.normalizePathTrailingSlash = normalizePathTrailingSlash;
 
 /***/ }),
@@ -1314,7 +1322,6 @@ var external_lodash_ = __webpack_require__("YLtl");
 
 
 
-external_semantic_ui_react_["Image"], external_semantic_ui_react_["Icon"];
 
 
 
@@ -1525,8 +1532,8 @@ var router_ = __webpack_require__("4Q3z");
 // EXTERNAL MODULE: external "react-toastify"
 var external_react_toastify_ = __webpack_require__("oAEb");
 
-// EXTERNAL MODULE: ./api/cart.js
-var cart = __webpack_require__("o/o4");
+// EXTERNAL MODULE: ./api/cartApi.js
+var cartApi = __webpack_require__("sP/q");
 
 // CONCATENATED MODULE: ./components/Cart/Payment/FormPayment/FormPayment.js
 
@@ -1569,7 +1576,7 @@ function FormPayment({
     if (result.error) {
       external_react_toastify_["toast"].error(result.error.message);
     } else {
-      const response = await Object(cart["d" /* paymentCardApi */])(result.token, products, auth.idUser, adress, logout);
+      const response = await Object(cartApi["d" /* paymentCardApi */])(result.token, products, auth.idUser, adress, logout);
 
       if (Object(external_lodash_["size"])(response) > 0) {
         external_react_toastify_["toast"].success("Pedido realizado correctamente");
@@ -4073,7 +4080,14 @@ function makePublicRouterInstance(router) {
 
 /***/ }),
 
-/***/ "o/o4":
+/***/ "oAEb":
+/***/ (function(module, exports) {
+
+module.exports = require("react-toastify");
+
+/***/ }),
+
+/***/ "sP/q":
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -4170,13 +4184,6 @@ async function paymentCardApi(token, products, idUser, adress, logout) {
 function removeAllProductsCart() {
   localStorage.removeItem(_utils_constants__WEBPACK_IMPORTED_MODULE_1__[/* CART */ "b"]);
 }
-
-/***/ }),
-
-/***/ "oAEb":
-/***/ (function(module, exports) {
-
-module.exports = require("react-toastify");
 
 /***/ }),
 

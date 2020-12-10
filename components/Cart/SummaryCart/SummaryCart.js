@@ -1,4 +1,4 @@
-import { useState, useEffect } from 'react'; Image, Icon
+import { useState, useEffect } from 'react'; 
 import { Table, Image, Icon } from 'semantic-ui-react';
 import { forEach, map } from 'lodash';
 import useCart from '../../../hooks/useCart'

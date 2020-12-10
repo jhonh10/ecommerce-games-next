@@ -1,0 +1,1 @@
+{"ast":null,"code":"export { default } from './HeaderGame';","map":{"version":3,"sources":["C:/Users/Jessica Palacios/Desktop/Proyectos React/ecomemrce-next/client/components/Game/HeaderGame/index.js"],"names":["default"],"mappings":"AAAA,SAASA,OAAT,QAAwB,cAAxB","sourcesContent":["export { default } from './HeaderGame';"]},"metadata":{},"sourceType":"module"}

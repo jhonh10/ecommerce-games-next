@@ -6,7 +6,7 @@ import { toast } from 'react-toastify';
 import { size } from 'lodash';
 import useAuth from '../../../../hooks/useAuth';
 import useCart from '../../../../hooks/useCart';
-import { paymentCardApi } from '../../../../api/cart';
+import { paymentCardApi } from '../../../../api/cartApi';
 
 
 export default function FormPayment({ adress, products }) {

@@ -1171,7 +1171,15 @@ function removePathTrailingSlash(path) {
 */
 
 
-const normalizePathTrailingSlash =  false ? undefined : removePathTrailingSlash;
+const normalizePathTrailingSlash =  true ? path => {
+  if (/\.[^/]+\/?$/.test(path)) {
+    return removePathTrailingSlash(path);
+  } else if (path.endsWith('/')) {
+    return path;
+  } else {
+    return path + '/';
+  }
+} : undefined;
 exports.normalizePathTrailingSlash = normalizePathTrailingSlash;
 
 /***/ }),
